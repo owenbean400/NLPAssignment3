@@ -1,0 +1,41 @@
+\documentclass{article}
+\usepackage{textgreek}
+\usepackage{listings}
+
+% Language setting
+% Replace `english' with e.g. `spanish' to change the document language
+\usepackage[english]{babel}
+
+% Set page size and margins
+% Replace `letterpaper' with`a4paper' for UK/EU standard size
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+\title{Assignment 3}
+\author{Owen Bean}
+
+\begin{document}
+\maketitle
+
+
+\section{Links}
+
+Github: \href{https://github.com/owenbean400/NLPAssignment3}{https://github.com/owenbean400/NLPAssignment3}
+
+\section{Questions 1}
+
+The P@1 average value for both title and body combined was 0.0141. That is 1.4\% of finding similar question from similar questions being correctly found. Only using question body P@1 average score is 0.0248 (2.5\%). Therefore, the body was more effective in finding similar questions than combining question title and body. Lastly, the question title P@1 average score is 0.04255 (4.3\%). The title was more effective in finding similar question than both question body and combination of question body and question title. A hypothesis for the question title being more effective at finding similar question is due to the question title having similar context for a question summary needed to be asked. A question body contains more variant information between similar questions.
+
+\section{Questions 2}
+
+Looking at the test results, the accuracy of the machine learning algorithm is 0.5714. 0.321 were false positive results and 0.107 were true negative results. The negative sampling was random question chosen to pair up with a positive sample. In that way, there is 50\% of duplicate questions and 50\% non duplicate question, so there is equal distribution in the training of maine learning. The best epochs used was between 180 due to the test resulted in the tensors.
+
+\section{Question 3}
+
+A continous bag of words (CBOW) tries to predict the word based on its neighbors, whereas, a skip-gram will predict the neighbors based on a single word. CBOW is better for syntactic relationship of words compared to skip-gram better at semantic relationship. CBOW is faster to train than a skip-gram model because skip-gram requires more data to be trained.
+
+\end{document}
